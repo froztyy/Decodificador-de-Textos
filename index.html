@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="container__alura__logo">
+            <img class="imagem__alura__logo" src="assets/logo.png" alt="logo alura">
+        </section>
+    </header>
+        <main class="container">
+            <div class="container__texto">    
+                <section>
+                    <textarea class="input__padrao" id="input__padrao" cols="50" rows="10" maxlength="550" oninput="forceRule()" placeholder="Digite seu texto aqui..." required ></textarea>
+                    <div class="container__secundario">
+                        <div class="container__aviso">
+                            <img class="ponto__exclamacao" src="/assets/exclamacao.png" alt="ponto de exclamação">
+                            <p>Apenas letras minúsculas e sem acentos.</p>
+                        </div>
+                        <div class="container__btn">
+                            <button type="button" onclick="botaoCriptografando()" name="Criptografar" class="botao__criptografar">Criptografar</button>
+                            <button type="button" onclick="botaoDescriptografando()" name="Descriptografar" class="botao__descriptografar">Descriptografar</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="container__texto__resposta">
+                    <div class="container__saida" id="container__saida">
+                        <img class="imagem__lupa" src="assets/lupa.png" alt="homem com uma lupa">
+                        <h2 class="texto__mensagem">Nenhuma Mensagem encontrada</h2>
+                        <p class="texto__solicitacao">Digite um texto que você deseja Criptografar ou Descriptografar</p>
+                    </div>
+                    <div class="container__resultado">
+                        <p id="texto__encriptado"></p>
+                        <button onclick="copiarTexto() "id="copiar__texto__btn" class="copiar__texto__btn">Copiar</button>
+                    </div>
+                </section>
+            </div>    
+
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por <strong>Pedro Nagatomo</strong>.</p>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+</html>
