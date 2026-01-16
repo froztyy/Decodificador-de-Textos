@@ -26,11 +26,13 @@ Esta é uma aplicação web que permite ao usuário criptografar e descriptograf
 
 ## Lógica do decodificador:
 
-***A letra "e" é convertida para "enter"***  
-***A letra "i" é convertida para "imes"***  
-***A letra "a" é convertida para "ai"***  
-***A letra "o" é convertida para "ober"***  
-***A letra "u" é convertida para "ufat"***  
+| Letra Original | Chave de Conversão |
+| :------------: | :----------------: |
+|       **a** | `ai`               |
+|       **e** | `enter`            |
+|       **i** | `imes`             |
+|       **o** | `ober`             |
+|       **u** | `ufat`             |
 
 ## 💻 Tecnologias 
 
